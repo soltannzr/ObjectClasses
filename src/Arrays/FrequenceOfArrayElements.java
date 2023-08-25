@@ -1,7 +1,6 @@
 package Arrays;
-
-
 import java.util.Arrays;
+
 public class FrequenceOfArrayElements {
     public static void main(String[] args) {
         int[] arr = {5, 10, 10, 10, 20, 20, 20, 20};
