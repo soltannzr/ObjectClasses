@@ -47,8 +47,6 @@ public class Match {
                         break;
                     }
                 }
-
-
                 printHealth();
             }
         }

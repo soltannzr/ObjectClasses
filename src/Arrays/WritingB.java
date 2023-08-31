@@ -5,11 +5,11 @@ public class WritingB {
 
         for(int i = 0; i<arr.length; i++){
             for(int j = 0; j<arr[i].length; j++){
-                if(j==0 || i==0 || (i==3 && j!=3) || (j==3 && i!=3)){
+                if(j==0 || i==0 || i == 6){
                     arr[i][j] = "* ";
                 }
-                else if (i==6){
-                    arr[i][j]="* ";
+                else if ((i==3 && j!=3) || (j==3 && i!=3)){
+                    arr[i][j] = "* ";
                 }
                 else {
                      arr[i][j] = "  ";
