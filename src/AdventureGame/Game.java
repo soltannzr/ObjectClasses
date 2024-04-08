@@ -20,7 +20,7 @@ public class Game {
         cave = new Cave(player);
         forest = new Forest(player);
         river = new River(player);
-        mine = new Mine (player);
+        mine = new Mine(player);
 
         System.out.println();
         System.out.println("Welcome to the adventure " + player.getName() + "!");
@@ -74,8 +74,8 @@ public class Game {
                     location = river;
                     break;
                 case 6:
-                    location = mine;
                     mineLoc = true;
+                    location = mine;
                     break;
                 default:
                     System.out.println("Please enter valid number!");
@@ -97,12 +97,6 @@ public class Game {
         }
     }
 
-    public Mine getMine() {
-        return mine;
-    }
-    public void setMine(Mine mine) {
-        this.mine = mine;
-    }
     public Cave getCave() {
         return cave;
     }
@@ -121,6 +115,13 @@ public class Game {
     public void setRiver(River river) {
         this.river = river;
     }
+    public Mine getMine() {
+        return mine;
+    }
+    public void setMine(Mine mine) {
+        this.mine = mine;
+    }
+
     public Inventory getInventory() {
         return inventory;
     }

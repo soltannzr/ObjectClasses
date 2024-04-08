@@ -30,6 +30,7 @@ public abstract class BattleLoc extends Location {
                 if (Game.mineLoc){
                     // call mineAwards method
                     System.out.println("Special location awards! ");
+                    Mine.mineAwards();
                 }
                 else {
                     // BattleLOc is not Mine
